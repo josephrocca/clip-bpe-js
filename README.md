@@ -2,7 +2,7 @@
 A JavaScript port of [OpenAI's CLIP byte-pair-encoding tokenizer](https://github.com/openai/CLIP/blob/3bee28119e6b28e75b82b811b87b56935314e6a5/clip/simple_tokenizer.py).
 
 ```js
-import Tokenizer from "https://deno.land/x/clip_bpe@v0.0.1/mod.js";
+import Tokenizer from "https://deno.land/x/clip_bpe@v0.0.2/mod.js";
 let t = new Tokenizer();
 
 t.encode("hello") // [3306]
