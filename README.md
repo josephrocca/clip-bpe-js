@@ -4,7 +4,6 @@ A JavaScript port of [OpenAI's CLIP byte-pair-encoding tokenizer](https://github
 ```js
 import Tokenizer from "https://deno.land/x/clip_bpe@v0.0.1/mod.js";
 let t = new Tokenizer();
-await t.init();
 
 t.encode("hello") // [3306]
 t.encode("magnificent") // [10724]
