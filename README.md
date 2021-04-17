@@ -15,8 +15,8 @@ st.decode(st.encode("let's see here")) // "let 's see here "
 
 This encoder/decoder behaves differently to the the GPT-2/3 tokenizer (JavaScript version of that [here](https://github.com/latitudegames/GPT-3-Encoder)). For example, it doesn't preserve capital letters, as shown above.
 
-The [Python version](https://github.com/openai/CLIP/blob/3bee28119e6b28e75b82b811b87b56935314e6a5/clip/simple_tokenizer.py) of this tokenizer uses the `ftfy` module to clean up the text before encoding it. I didn't include that module by default because the only version available in JavaScript is this one, which requires importing a full Python runtime as a WebAssembly module. If you want the `ftfy` cleaning, just clean your text with it before passing it to the `.encode()` method.
+The [Python version](https://github.com/openai/CLIP/blob/3bee28119e6b28e75b82b811b87b56935314e6a5/clip/simple_tokenizer.py) of this tokenizer uses the `ftfy` module to clean up the text before encoding it. I didn't include that module by default because currently the only version available in JavaScript is [this one](https://github.com/josephrocca/ftfy-pyodide), which requires importing a full Python runtime as a WebAssembly module. If you want the `ftfy` cleaning, just import it and clean your text with it before passing it to the `.encode()` method.
 
 # License
 
-To the extent that there is any original code in this repo, it is MIT Licensed, just like [openai/CLIP](https://github.com/openai/CLIP).
+To the extent that there is any original work in this repo, it is MIT Licensed, just like [openai/CLIP](https://github.com/openai/CLIP).
