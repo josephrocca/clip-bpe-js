@@ -70,10 +70,6 @@ function whitespaceClean(text) {
 
 export default class {
   constructor() {
-
-  }
-
-  async init() {
     this.byteEncoder = bytesToUnicode();
     this.byteDecoder = Object.fromEntries(Object.entries(this.byteEncoder).map(([k,v]) => [v,k]));
     let merges = bpeVocabData.text.split("\n");
