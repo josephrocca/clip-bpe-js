@@ -160,6 +160,16 @@ export default class {
     }
     return bpeTokens;
   }
+  
+  // adds start and end token, and adds padding 0's and ensures it's 77 tokens long
+  encodeForCLIP(text) {
+    let tokens = this.encode(text);
+    tokens.unshift(49406); // start token
+    tokens = tokens.slice(0, 76);
+    tokens.push(49407); // end token
+    while(tokens.length < 77) tokens.push(0);
+    return tokens;
+  }
 
   decode(tokens) {
     let text = tokens.map(token => this.decoder[token]).join("");
