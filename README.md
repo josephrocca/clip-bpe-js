@@ -23,4 +23,4 @@ The [Python version](https://github.com/openai/CLIP/blob/3bee28119e6b28e75b82b81
 
 # License
 
-To the extent that there is any original work in this repo, it is MIT Licensed, just like [openai/CLIP](https://github.com/openai/CLIP).
+To the extent that there is any original work in this repo, it is Apache 2.0 Licensed, just like [openai/CLIP](https://github.com/openai/CLIP).
